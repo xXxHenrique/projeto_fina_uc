@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Combinação de Cores</h1>
+    <p id="cores"></p>
+    <script>
+        let tentativas = 0;
+        let corc = 0;
+        let cor;
+        let sair;
+
+
+
+        while (sair != 0) {
+
+            cores = ["Amarelo + Laranja: Vermelho", "Vermelho + Amarelo: Laranja", "Azul + Vermelho: Roxo", "Amarelo + Azul: Verde", "Amarelo + Verde: Azul", "Branco + Preto: Cinza", "Vermelho + Branco: Rosa", "Laranja + Branco: Pele", "Vermelho + Verde: Marrom", "Roxo + Branco: Lilas"];
+            while (tentativas < 2) {
+                cor = Number(prompt("Qual combinação de cor você deseja saber\n 1 - Vermelho\n2 - Laranja\n 3 - Roxo\n 4 - Verde\n 5 - Azul\n6 - Cinza\n 7- Rosa\n 8- Pele\n 9- Marrom\n 10- Lilás"));
+
+                if (cor < 11) {
+
+                    switch (cor) {
+                        case 0:
+                        alert("Cor Invalida");
+                        case 1:
+                            cor = cores[0];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+
+                            break;
+                        case 2:
+                            cor = cores[1];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+
+                            break;
+                        case 3:
+                            cor = cores[2];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+
+                            break;
+                        case 4:
+                            cor = cores[3];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+                            break;
+                        case 5:
+                            cor = cores[4];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+                            break;
+                        case 6:
+                            cor = cores[5];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+                            break;
+                        case 7:
+                            cor = cores[6];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+                            break;
+                        case 8:
+                            cor = cores[7];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+                            break;
+                        case 9:
+                            cor = cores[8];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+                            break;
+                        case 10:
+                            cor = cores[9];
+                            tentativas = 2;
+                            document.getElementById("cores").innerHTML = cor;
+                            break;
+                    }
+                } else {
+                    alert("Cor Invalida");
+                    tentativas=0;
+                }
+
+            }
+
+            sair = Number(prompt("Digite o zero pra sair"));
+        }
+    </script>
+
+
+</body>
+
+</html>
+</body>
+</html>
